@@ -31,7 +31,7 @@ function generatePlayField() {
 function generateTetromino() {
   const name = 0;
   const matrix = TETROMINOES[name];
-
+  console.log(matrix);
   tetromino = {
     name: TETROMINO_NAMES[0],
     row: 4,
