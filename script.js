@@ -29,11 +29,12 @@ function generatePlayField() {
 }
 
 function generateTetromino() {
-  const name = 0;
+  const name = TETROMINO_NAMES[0];
   const matrix = TETROMINOES[name];
   console.log(matrix);
   tetromino = {
-    name: TETROMINO_NAMES[0],
+    name,
+    matrix: TETROMINO_NAMES[0],
     row: 4,
     column: 3,
   };
@@ -49,6 +50,9 @@ function drawPlayField() {
 }
 
 function drawTetromino() {
+  const name = tetromino.name;
+  const tetrominoMatrixSize = tetromino.matrix.lenght;
+
   for (let row = 0; row < 1; row++) {
     for (let column = 0; column < 1; column++) {
       const cellIndex = convertPositionToIndex(
