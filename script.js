@@ -51,8 +51,8 @@ function drawPlayField() {
 
 function drawTetromino() {
   const name = tetromino.name;
-  const tetrominoMatrixSize = tetromino.matrix.lenght;
-
+  const tetrominoMatrixSize = tetromino.matrix.length;
+  console.log(tetrominoMatrixSize);
   for (let row = 0; row < 1; row++) {
     for (let column = 0; column < 1; column++) {
       const cellIndex = convertPositionToIndex(
